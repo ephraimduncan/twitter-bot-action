@@ -1,6 +1,6 @@
 {
   "name": "twitter-bot-action",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Github Action to run Twitter Bot",
   "author": {
     "name": "Ephraim Atta-Duncan",

@@ -2,13 +2,11 @@
 
 **GitHub Action for running Twitter Bot**
 
-This is a GitHub Action that runs your twitter bot periodically without services like Heroku, Render and AWS.## Development
-
-Suggestions and contributions are always welcome!
+This is a GitHub Action that runs your twitter bot periodically without services like Heroku, Render and AWS.
 
 > _Only JavaScript Supported_
 
-## Setup
+### Setup
 
 1. Create a `config.js` file and export an object with the following.
 
@@ -53,7 +51,7 @@ Suggestions and contributions are always welcome!
            with:
              node-version: '12.x'
          - name: Run Bot
-           uses: dephraiim/twitter-bot-action@v1'
+           uses: dephraiim/twitter-bot-action@v1.1
            env:
              CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
              CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
@@ -61,13 +59,9 @@ Suggestions and contributions are always welcome!
              ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
    ```
 
-## Usage
-
 ### Tweeting
 
-Using this the workflow above, GitHub will run your bot every 30 minutes.
-
-## Configuration
+Using the workflow above, GitHub will run your twitter bot every 30 minutes.
 
 ### Options
 
@@ -76,10 +70,10 @@ You can configure the action further with the following options:
 - `package_root`: Directory where NPM/Yarn commands should be run (default: `"."`)
 - `file_name`: Name of the main bot file (default: `"index.js"`)
 
-## Development
+### Development
 
 Contributions and Suggestions are always welcome!
 
-## LICENSE
+### LICENSE
 
 [MIT](./license)
