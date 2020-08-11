@@ -1,0 +1,19 @@
+{
+  "name": "twitter-bot-action",
+  "version": "1.0.0",
+  "description": "Github Action to run Twitter Bot",
+  "author": {
+    "name": "Ephraim Atta-Duncan",
+    "email": "ephraimduncan68@gmail.com"
+  },
+  "main": "index.js",
+  "keywords": [
+    "bot",
+    "twitter"
+  ],
+  "repository": "github:dephraiim/twitter-bot-action",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.4"
+  }
+}

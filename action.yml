@@ -1,0 +1,21 @@
+name: Twitter Bot Action
+author: Ephraim Atta-Duncan
+description: GitHub Action for running Twitter Bot.
+
+inputs:
+  package_root:
+    description: Directory where NPM/Yarn commands should be run
+    required: false
+    default: '.'
+  file_name:
+    description: Filename of bot file.
+    required: false
+    default: 'index.js'
+
+runs:
+  using: node12
+  main: index.js
+
+branding:
+  icon: twitter
+  color: blue
