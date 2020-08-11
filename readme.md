@@ -38,6 +38,7 @@ This is a GitHub Action that runs your twitter bot periodically without services
    name: Tweet
 
    on:
+     workflow_dispatch:
      schedule:
        - cron: '*/30 * * * *' # Runs Bot every 30 minutes
 
