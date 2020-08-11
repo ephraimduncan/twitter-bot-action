@@ -32,7 +32,7 @@ This is a GitHub Action that runs your twitter bot periodically without services
 
 1. Create a twitter app with your shared twitter account and store the credentials as `CONSUMER_KEY`,`CONSUMER_SECRET`,`ACCESS_TOKEN` and `ACCESS_TOKEN_SECRET` in your repository’s [secrets settings](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets-for-a-repository).
 
-1. **Add a workflow file** to your project (e.g. `.github/workflows/tweet.yml`) with this:
+1. **Add a workflow file** to your project (e.g. `.github/workflows/build.yml`) with this:
 
    ```yml
    name: Tweet
