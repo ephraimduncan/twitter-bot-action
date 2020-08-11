@@ -52,7 +52,7 @@ This is a GitHub Action that runs your twitter bot periodically without services
            with:
              node-version: '12.x'
          - name: Run Bot
-           uses: dephraiim/twitter-bot-action@v1.1
+           uses: dephraiim/twitter-bot-action@v1.2.1
            env:
              CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
              CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
