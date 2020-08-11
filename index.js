@@ -44,7 +44,7 @@ const runAction = () => {
   run(useNpm ? 'npm install' : 'yarn', pkgRoot);
 
   // Running Bot
-  log(`Running bot at ${getInput(`file_name`)}...`);
+  log(`Running bot at ${core.getInput(`file_name`)}...`);
   run(`node ${core.getInput(`file_name`)}`, pkgRoot);
 };
 
