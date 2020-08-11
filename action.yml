@@ -17,5 +17,5 @@ runs:
   main: index.js
 
 branding:
-  icon: twitter
+  icon: activity
   color: blue
