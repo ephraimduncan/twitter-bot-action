@@ -1,4 +1,4 @@
-const { getInput, setFailed } = require('@actions/core').core;
+const core = require('@actions/core');
 const { execSync } = require('child_process');
 const { existsSync } = require('fs');
 const { join } = require('path');
@@ -26,7 +26,7 @@ const run = (cmd, cwd) => execSync(cmd, { encoding: 'utf8', stdio: 'inherit', cw
  * Installs dependencies and run bot
  */
 const runAction = () => {
-  const pkgRoot = getInput('package_root');
+  const pkgRoot = core.getInput('package_root');
   const pkgJsonPath = join(pkgRoot, 'package.json');
   const pkgLockPath = join(pkgRoot, 'package-lock.json');
 
@@ -45,11 +45,11 @@ const runAction = () => {
 
   // Running Bot
   log(`Running bot at ${getInput(`file_name`)}...`);
-  run(`node ${getInput(`file_name`)}`, pkgRoot);
+  run(`node ${core.getInput(`file_name`)}`, pkgRoot);
 };
 
 try {
   runAction();
 } catch (error) {
-  setFailed(error.message);
+  core.setFailed(error.message);
 }
